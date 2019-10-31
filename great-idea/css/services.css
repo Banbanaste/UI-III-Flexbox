@@ -19,16 +19,35 @@
 .action_card {
   width: 425px;
   padding: 20px;
-  border: 1px solid #000;
   background-color: rgb(236, 236, 236);
   margin-bottom: 40px;
+  transition: ease-in-out 0.2s;
+}
+
+.action_card:hover {
+  color: rgb(0, 255, 115);
+  background-color: #000;
 }
 
 .action_card button {
   margin-top: 15px;
   padding: 7px 30px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: solid 1px #000;
+}
+
+.action_card button {
+  text-decoration: none;
+  color: #000;
+  padding: 2px 30px;
+  border: 1px solid #000;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.action_card button:hover {
+  cursor: pointer;
 }
 
 /* service cards section styleing */
